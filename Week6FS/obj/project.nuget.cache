@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZVPCbkJWQFf+sVQO8j92aLTRVuu28tLlHAnLFHjjYKjK7qjm9Meo2p+wjCz7Ekrav4Y++DMLrVK4CwZV5i1+Mg==",
+  "dgSpecHash": "EcWFEuA5L9Fq+yliit7GsI7FOqOAWBqVYiqTNFNi6dFh+YlpbClz3caCFtWsuVcgXDTFcgaPa3k5ecpOwcx8/g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\tatja\\OneDrive\\Desktop\\Full stack\\Project week 6\\Week6FS\\Week6FS\\Week6FS.csproj",
+  "projectFilePath": "C:\\Full stack\\Project week 6\\Week6FS\\Week6FS\\Week6FS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tatja\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\tatja\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",

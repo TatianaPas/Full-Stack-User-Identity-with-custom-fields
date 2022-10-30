@@ -1,0 +1,42 @@
+﻿@model IEnumerable<Week6FS.Models.SearchProductModel>
+
+@{
+    ViewData["Title"] = "Product List";
+}
+
+<h1>Result</h1>
+
+
+<table class="table bg-dark text-white">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ProductName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UnitPrice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UnitsInStock)
+            </th>
+            
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProductName)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.UnitPrice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UnitsInStock)
+            </td>
+            
+        </tr>
+}
+    </tbody>
+</table>

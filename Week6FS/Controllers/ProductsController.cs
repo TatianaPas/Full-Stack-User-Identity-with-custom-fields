@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 using Week6FS.Models;
 
 namespace Week6FS.Controllers
@@ -17,6 +18,48 @@ namespace Week6FS.Controllers
         {
             _context = context;
         }
+
+
+        //Search product GET
+
+        public string searchProductByUnit(string unitPrice)
+        {
+            //declare response
+            string searchResult = "";
+            // url to Azure Function
+            string urlConnection = "http://localhost:7190/api/SearchProductByUnitPrice";
+            string param = $"?UnitPrice={unitPrice}";
+
+            //http client
+
+            HttpClient client = new HttpClient();
+            HttpResponseMessage message = client.GetAsync(urlConnection+ param).Result;
+            HttpContent httpContent = message.Content;
+            if(httpContent != null)
+            {
+                searchResult=httpContent.ReadAsStringAsync().Result;
+            }
+            else
+            {
+                searchResult = "Error";
+            }
+            return searchResult;
+
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> ProductList(string unitPrice)
+        {
+            string jsonResult = searchProductByUnit(unitPrice);
+            return View(JsonConvert.DeserializeObject<List<SearchProductModel>>(jsonResult));
+        }
+
+        public async Task<IActionResult> SearchProduct()
+        {
+            return View();
+        }
+
+
 
         // GET: Products
         public async Task<IActionResult> Index()

@@ -9878,11 +9878,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tatja\\OneDrive\\Desktop\\Full stack\\Project week 6\\Week6FS\\Week6FS\\Week6FS.csproj",
+      "projectUniqueName": "C:\\Full stack\\Project week 6\\Week6FS\\Week6FS\\Week6FS.csproj",
       "projectName": "Week6FS",
-      "projectPath": "C:\\Users\\tatja\\OneDrive\\Desktop\\Full stack\\Project week 6\\Week6FS\\Week6FS\\Week6FS.csproj",
+      "projectPath": "C:\\Full stack\\Project week 6\\Week6FS\\Week6FS\\Week6FS.csproj",
       "packagesPath": "C:\\Users\\tatja\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tatja\\OneDrive\\Desktop\\Full stack\\Project week 6\\Week6FS\\Week6FS\\obj\\",
+      "outputPath": "C:\\Full stack\\Project week 6\\Week6FS\\Week6FS\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -9952,7 +9952,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -9964,7 +9965,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.303\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }
